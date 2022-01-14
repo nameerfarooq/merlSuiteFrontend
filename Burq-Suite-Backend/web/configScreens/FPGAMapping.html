@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FPGA Mapping</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+
+<body>
+    <style>
+        body {
+            overflow-y: scroll;
+        }
+    </style>
+    <section class="clean-block">
+        <div class="topmost_bar">
+            <img src="assets/img/fpga.png" />
+            Mapping I/Os to FPGA
+        </div>
+        <div class="main_space">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 bordered-box">
+                        <img src="assets/img/arty.png" style="width:100%" />
+                    </div>
+                    <div class="mainbuttondiv">
+
+                        <div class="boardbuttons">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>BTN0</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>BTN1</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>BTN2</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>BTN3</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="boardbuttons">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>SW0</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>SW1</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>SW2</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>SW3</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="boardbuttons">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>LD0</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>LD1</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>LD2</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>LD3</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="boardbuttons">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>JA</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <hr>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>JB</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>JC</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <h6>JD</h6>
+                                </div>
+                                <select class="custom-select" id="inputGroupSelect03">
+                                    <option selected>Choose</option>
+                                    <option value="1">One</option>
+                                    <option value="2">Two</option>
+                                    <option value="3">Three</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="pinStatus">
+                            <ul>
+                                <li>LED -- I\O</li>
+                                <li>LED -- I\O</li>
+                                <li>LED -- I\O</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <br>
+                <br>
+                <br>
+                <div class="d-flex justify-content-between">
+                    <button onclick="window.location.href = 'FPGASelection.html'" class="btn fin-btn"> <span>
+                            << /span> Back </button>
+                    <button onclick="window.location.href = 'FPGAMapped.html'" class="btn fin-btn"> Next <span>></span>
+                    </button>
+                </div>
+                <br>
+                <br>
+            </div>
+        </div>
+    </section>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

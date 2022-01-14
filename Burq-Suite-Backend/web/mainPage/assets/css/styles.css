@@ -1,0 +1,28 @@
+.mynav div {
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+.myicon {
+  justify-content: space-between;
+  margin: 12px;
+}
+
+.fa.fa-star {
+  margin: 12px;
+}
+
+#terminall {
+  display:none
+}
+.opent {
+  display:block !important
+
+}
+.hidet{
+  display: none !important;
+}
+
+#text{
+  height:40vh;
+}

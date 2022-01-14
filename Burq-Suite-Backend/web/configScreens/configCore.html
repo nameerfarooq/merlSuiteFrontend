@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Config Core</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">    
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body>
+
+    <section class="clean-block">
+        <div class="topmost_bar">
+            <img src="assets/img/chip_icon.png" />
+            Custom Configure Core
+        </div>
+        <div class="main_space">
+            <div class="container">
+                <div class="d-flex justify-content-around">
+                        <div class="col-md-5 bordered-box">
+                            <h3> Select ISA </h3>
+                            <input type="radio" name="isa" value="32 Bit" checked />
+                            <label> 32 Bit </label>
+                            <br>
+                            <input type="radio" name="isa" value="64 Bit" />
+                            <label> 64 Bit </label>
+                        </div>
+                   
+                        
+                        <div class="col-md-5 bordered-box">
+                            <h3> Select Extensions </h3>
+                            <input type="checkbox" name="ext" disabled checked />
+                            <label> Integer (I) </label>
+                            <br />
+                            <input type="checkbox" name="ext" />
+                            <label> Multiplier (M) </label>
+                            <br />
+                            <input type="checkbox" name="ext" />
+                            <label> Floating Point (F) </label>
+                            <br />
+                            <input type="checkbox" name="ext" />
+                            <label> Compressed (C) </label>
+                            <br />
+                        </div>
+                    </div>
+
+                <br>
+                <br>
+                <br>
+                <div class="d-flex justify-content-end">
+                    <button onclick="closeThisWindow()" class="btn fin-btn"> Finalize Core <span>></span> </button>
+                </div>
+                
+            </div>
+            
+        </div>
+        
+    </section>
+    
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script>
+        function closeThisWindow(){
+            window.close()
+        }
+    </script>
+</body>
+</html>
